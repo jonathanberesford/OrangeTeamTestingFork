@@ -11,7 +11,7 @@ public class TaxesTest {
                 "You pay 10% on your next £5000, which is £500\n" +
                 "You pay 15% on your next £10000, which is £1500\n" +
                 "You pay 20% on your next £15000, which is £3000\n" +
-                "This leaves £0.00, of which you pay 25%, or £0.00 in tax", Taxes.main("45000"));
+                "This leaves £0.00, of which you pay 25%, or £0.00 in tax", tx.output(45000));
 
     }
 }
