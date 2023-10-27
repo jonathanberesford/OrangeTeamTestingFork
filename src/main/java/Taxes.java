@@ -15,11 +15,7 @@ public class Taxes {
         System.out.println("You are in the " + bracket + " tax bracket.\n" +
                 "You will be paying £" + makePretty(t) + " in tax. Here's the breakdown:");
     }
-
-    public static void main(String[] args) {
-        Scanner inScanner = new Scanner(System.in);
-        System.out.println("Input income here");
-        float income = inScanner.nextFloat();
+    static void output(float income){
         if (income < 15000) {
             System.out.println("You are in the 0% tax bracket.\nYou earn all your money tax free!");
         } else {
@@ -58,6 +54,13 @@ public class Taxes {
                         makePretty(tax - 5000) + " in tax");
             }
         }
+    }
+
+    public static void main(String[] args) {
+        Scanner inScanner = new Scanner(System.in);
+        System.out.println("Input income here");
+        float income = inScanner.nextFloat();
+        output(income);
     }
 }
 /*
